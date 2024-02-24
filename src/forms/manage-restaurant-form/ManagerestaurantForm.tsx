@@ -72,12 +72,15 @@ const ManageRestaurantForm = ({ onSave, isLoading }: Props) => {
     formDataJson.cuisines.forEach((cuisine, index) => {
       formData.append(`cuisines[${index}]`, cuisine);
     });
-    formDataJson.menuItems.forEach((menuItems, index) => {
+    formDataJson.menuItems.forEach((menuItem, index) => {
+      formData.append(`menuItems[${index}[name]`, menuItem.name);
       formData.append(
-        `menuItmes[${index}][name]`,
+        `menuItems[${index}][price]`,
         (menuItem.price * 100).toString()
       );
     });
+
+    formData.append;
   };
   return (
     <Form {...form}>
