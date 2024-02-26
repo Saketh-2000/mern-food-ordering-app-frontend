@@ -132,7 +132,7 @@ const UserProfileForm = ({
         {isLoading ? (
           <LoadingButton />
         ) : (
-          <Button type="submit" className="bg-oraange-500">
+          <Button type="submit" className="bg-orange-500">
             {buttonText}
           </Button>
         )}

@@ -1,5 +1,5 @@
 import { FormControl, FormItem, FormLabel } from "@/components/ui/form";
-import { Checkbox } from "@radix-ui/react-checkbox";
+import { Checkbox } from "@/components/ui/checkbox";
 import { FieldValues } from "react-hook-form";
 
 import { ControllerRenderProps } from "react-hook-form";

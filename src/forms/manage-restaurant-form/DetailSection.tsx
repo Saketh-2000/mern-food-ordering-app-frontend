@@ -63,7 +63,7 @@ const DetailSection = () => {
       </div>
       <FormField
         control={control}
-        name="deliveryprice"
+        name="deliveryPrice"
         render={({ field }) => (
           <FormItem className="max-w-[25%]">
             <FormLabel>Delivery price</FormLabel>
