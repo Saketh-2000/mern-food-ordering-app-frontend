@@ -4,7 +4,8 @@ import HomePage from "./pages/HomePage.tsx";
 import AuthCallbackPage from "./pages/AuthCallbackPage.tsx";
 import UserProfilePage from "./pages/UserProfilePage.tsx";
 import { ProtectedRoute } from "./auth/ProtectedRoutes.tsx";
-import ManageRstaurantPage from "./pages/ManageRestaurantPage.tsx";
+import ManageRestaurantPage from "./pages/ManageRestaurantPage.tsx";
+import SearchPage from "./pages/SearchPage.tsx";
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,15 @@ const AppRoutes = () => {
         }
       />
       <Route path="/auth-callback" element={<AuthCallbackPage />} />
+
+      <Route
+        path="/search/:city"
+        element={
+          <Layout showHero={false}>
+            <SearchPage />
+          </Layout>
+        }
+      />
       <Route element={<ProtectedRoute />}>
         <Route
           path="/user-profile"
@@ -32,7 +42,7 @@ const AppRoutes = () => {
           path="/manage-restaurant"
           element={
             <Layout>
-              <ManageRstaurantPage />
+              <ManageRestaurantPage />
             </Layout>
           }
         />

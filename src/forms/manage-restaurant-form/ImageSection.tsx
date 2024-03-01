@@ -12,7 +12,7 @@ import { useFormContext } from "react-hook-form";
 const ImageSection = () => {
   const { control, watch } = useFormContext();
 
-  const existingImageUrl = watch("ImageUrl");
+  const existingImageUrl = watch("imageUrl");
   return (
     <div className="space-y-2">
       <div>

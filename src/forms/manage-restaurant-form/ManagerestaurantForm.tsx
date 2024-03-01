@@ -87,7 +87,7 @@ const ManageRestaurantForm = ({ onSave, isLoading, restaurant }: Props) => {
     form.reset(updatedRestaurant);
   }, [form, restaurant]);
 
-  console.log("formState", form.formState);
+  // console.log("formState", form.formState);
   const onSubmit = (formDataJson: RestaurantFormData) => {
     const formData = new FormData();
 
